@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var labelIdade: UILabel!
+    @IBOutlet weak var campoIdade: UITextField!
+    
+    @IBAction func acaoEnviar(_ sender: Any) {
+        
+        print("Botão Enviar pressionado")
+        labelIdade.text = campoIdade.text
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        print("Aplicação carregada.")
+    
     }
 
     override func didReceiveMemoryWarning() {
